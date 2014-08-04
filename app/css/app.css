@@ -12,7 +12,7 @@
   clear: both;
 }
 body {
-  font-family: "Helvetica Neue" sans-seriff;
+  font-family: "Helvetica Neue", "Arial", sans-seriff;
   color: #4d4d4d;
 }
 header {
@@ -39,7 +39,7 @@ header .subtitle {
   position: relative;
   top: 10px;
 }
-main {
+.container {
   width: 900px;
   max-width: 100%;
   margin: auto auto;
@@ -47,11 +47,11 @@ main {
   padding-top: 40px;
   box-sizing: content-box;
 }
-aside {
+.sidebar {
   width: 150px;
   float: left;
 }
-section {
+.main {
   max-width: 750px;
   float: left;
   padding-left: 40px;
