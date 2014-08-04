@@ -2,16 +2,37 @@ aside.sidebar
   include ./../mixins/aside_section.jade
 
   +section('about')
-    .wtf 1743 Aden dr.
-    .wtf Houston, Tx
-    .wtf 77003
+    .item 1743 Aden dr.
+    .item Houston, Tx
+    .item 77003
+
   +section('')
     ul
+      li
+        a(href="mailto:luisg@nadafancy.com") luisg@nadafancy.com
       li
         a(href="https://github.com/Dudemullet") GitHub
       li
         a(href="https://twitter.com/Dudemullet") Twitter
       li
         a(href="http://nadafancy.com") Homepage
-  +section('')
-    .wtf hello
+
+  +section('languages')
+    .item English
+    .item Spanish
+
+  +section('programming')
+    .item JavaScript
+    .item (Node)
+    .item HTML & CSS
+    .item Java (Groovy)
+    .item MVC Frameworks
+
+  +section('libraries')
+    .item D3
+    .item Bootstrap
+    .item jQuery
+    .item Mustache
+    .item Socket.io
+    .item Express
+    .item Grunt/Gulp

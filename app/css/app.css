@@ -15,6 +15,14 @@ body {
   font-family: "Helvetica Neue", "Arial", sans-seriff;
   color: #4d4d4d;
 }
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 header {
   color: #eaeaea;
   background-color: #4d4d4d;
@@ -64,4 +72,7 @@ section {
 }
 section .header {
   margin: 0;
+}
+section ul {
+  list-style-type: none;
 }
