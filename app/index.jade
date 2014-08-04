@@ -1,14 +1,12 @@
-doctype
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title CV - Luis gutierrez 1
-    link(rel='stylesheet', type='text/css', href='normalize.css')
-    link(rel='stylesheet', type='text/css', href='app.css')
-  body
-    header
-      .center
-        h1.title luis
-          span gutierrez
-        small.subtitle front end developer
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  title CV - Luis gutierrez 1
+  link(rel='stylesheet', type='text/css', href='./css/app.css')
+body
+  include ./includes/header.jade
+
+  main.clearfix
+    include ./includes/personal.jade
+    section rofl

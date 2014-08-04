@@ -1,0 +1,67 @@
+@import "normalize.css";
+@import "print.css";
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: "Helvetica Neue" sans-seriff;
+  color: #4d4d4d;
+}
+header {
+  color: #eaeaea;
+  background-color: #4d4d4d;
+  width: 100%;
+  position: relative;
+  height: 150px;
+  font-size: 1.8em;
+}
+header .title {
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+header span {
+  font-weight: 800;
+}
+header .subtitle {
+  font-size: 0.8em;
+  display: block;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  top: 10px;
+}
+main {
+  width: 900px;
+  max-width: 100%;
+  margin: auto auto;
+  padding: 20px;
+  padding-top: 40px;
+  box-sizing: content-box;
+}
+aside {
+  width: 150px;
+  float: left;
+}
+section {
+  max-width: 750px;
+  float: left;
+  padding-left: 40px;
+}
+aside {
+  text-align: right;
+}
+section {
+  margin-bottom: 20px;
+}
+section .header {
+  margin: 0;
+}

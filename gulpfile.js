@@ -4,8 +4,8 @@ var gulp = require('gulp'),
   less = require('gulp-less');
 
 var paths = {
-  lessFiles : APP_ROOT + '/**.less',
-  jadeFiles : APP_ROOT + '/**.jade'
+  lessFiles : APP_ROOT + '/less/**.less',
+  jadeFiles : APP_ROOT + '/**/**.jade'
 }
 
 var startExpress = function() {
@@ -44,13 +44,13 @@ gulp.task('watch', function(){
 gulp.task('copy', function() {
   //normalize css
   gulp.src(__dirname + "/node_modules/normalize.css/normalize.css")
-  .pipe(gulp.dest(APP_ROOT));
+  .pipe(gulp.dest(APP_ROOT + "/css"));
 });
 
 gulp.task('less', function() {
-  gulp.src(APP_ROOT+"/app.less")
+  gulp.src(APP_ROOT+"/less/app.less")
     .pipe(less())
-    .pipe(gulp.dest(APP_ROOT));
+    .pipe(gulp.dest(APP_ROOT + "/css"));
 });
 
 // `gulp.task()` defines task that can be run calling `gulp xyz` from the command line

@@ -4,11 +4,11 @@ body {
 }
 
 header {
+  color: @header-font-color;
   background-color: @header-color;
-  display: inline-block;
   width: 100%;
   position: relative;
-  height: 180px;
+  height: 150px;
   font-size: 1.8em;
 
   .title {
@@ -31,4 +31,22 @@ header {
   }
 }
 
+main {
+  width: 900px;
+  max-width: 100%;
+  margin: auto auto;
+  padding: 20px;
+  padding-top: 40px;
+  box-sizing: content-box;
+}
 
+aside {
+  width: 150px;
+  float:left;
+}
+
+section {
+  max-width: 750px;
+  float: left;
+  padding-left: 40px;
+}

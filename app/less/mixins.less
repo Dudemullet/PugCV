@@ -17,3 +17,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.columns(@arg) {
+  columns: @arg;
+  -webkit-columns: @arg;
+  -moz-columns: @arg;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
