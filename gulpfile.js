@@ -38,18 +38,19 @@ gulp.task('watch', function(){
   gulp.watch(paths.lessFiles,['less']);
   gulp.watch([paths.jadeFiles, paths.lessFiles], function(event){
     notifyLivereload(event,lr);
-  })
+  }).on('error', console.log)
 })
 
 gulp.task('copy', function() {
   //normalize css
-  gulp.src(__dirname + "/node_modules/normalize.css/normalize.css")
+  return gulp.src(__dirname + "/node_modules/normalize.css/normalize.css")
   .pipe(gulp.dest(APP_ROOT + "/css"));
 });
 
 gulp.task('less', function() {
-  gulp.src(APP_ROOT+"/less/app.less")
+  return gulp.src(APP_ROOT+"/less/app.less")
     .pipe(less())
+    .on('error', console.log)
     .pipe(gulp.dest(APP_ROOT + "/css"));
 });
 

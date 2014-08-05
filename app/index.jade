@@ -9,4 +9,13 @@ body
 
   main.container.clearfix
     include ./includes/personal.jade
-    section.main rofl
+
+    .main
+      include ./mixins/main_section.jade
+      include ./mixins/timed_section.jade
+
+      +section('interests').
+        I have recently gotten very into Node. I had been using it mostly as a build tool for the last 3 years, but I now use it as my main development platform from where I try to use as most tools from it as I can. I also like contributing back to the dependencies in my projects and giving presentations in my local javascript meetups. I also like to run 5~10 Kilometers every day and I'm currently training to run a marathon.
+
+      +timed_section('rofl')
+        +entry('wtf','rofl','http://google.com')

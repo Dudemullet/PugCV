@@ -1,0 +1,11 @@
+mixin entry(name, time, link)
+  .entry
+    h3.name= name
+    .time= time
+    a.link(href=link)= link
+
+mixin timed_section(name)
+  section.main-section.timed-block
+    h2.name= name
+    if block
+      block
