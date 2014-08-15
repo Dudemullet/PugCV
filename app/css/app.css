@@ -1,5 +1,4 @@
 @import "normalize.css";
-@import "print.css";
 .center {
   position: absolute;
   top: 50%;
@@ -11,9 +10,13 @@
   display: table;
   clear: both;
 }
+.thin-font {
+  font-weight: 200;
+}
 body {
   font-family: "Helvetica Neue", "Arial", sans-seriff;
   color: #4d4d4d;
+  font-size: 16px;
 }
 a {
   color: #4d4d4d;
@@ -63,6 +66,7 @@ header .subtitle {
   max-width: 750px;
   float: left;
   padding-left: 40px;
+  box-sizing: border-box;
 }
 aside {
   text-align: right;
@@ -76,7 +80,25 @@ section .header {
 section ul {
   list-style-type: none;
 }
+.sidebar .item {
+  font-weight: 200;
+}
 .main-section .name {
   margin: 0 0 20px 0;
   padding: 0;
+}
+.timed-block .entry {
+  width: 710px;
+}
+.timed-block .entry .time {
+  width: 100px;
+  font-weight: 200;
+  float: left;
+}
+.timed-block .entry .entry-main {
+  margin-left: 120px;
+}
+.timed-block .entry .entry-main .header {
+  margin: 0;
+  line-height: 16px;
 }

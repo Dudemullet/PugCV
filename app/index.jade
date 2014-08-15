@@ -14,12 +14,12 @@ body
       include mixins/main_section
       include mixins/timed_section
 
-      +section('interests').
-        I have recently gotten very into Node. I had been using it mostly as a build tool for the last 3 years, but I now use it as my main development platform from where I try to use as most tools from it as I can. I also like contributing back to the dependencies in my projects and giving presentations in my local javascript meetups. I also like to run 5~10 Kilometers every day and I'm currently training to run a marathon.
+      +section('interests')
+        .thin-font I have recently gotten very into Node. I had been using it mostly as a build tool for the last 3 years, but I now use it as my main development platform from where I try to use as most tools from it as I can. I also like contributing back to the dependencies in my projects and giving presentations in my local javascript meetups. I also like to run 5~10 Kilometers every day and I'm currently training to run a marathon.
 
-      +timed_section('rofl')
+      +timed_section('experience')
         .entry
           .time 1990-2001
-          div
-            h3.name wtf
-            a.link 'http://google.com'
+          .entry-main
+            h3.header wtf
+            a.link.thin-font Visualization of complex networks

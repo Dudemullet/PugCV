@@ -4,3 +4,24 @@
     padding:0;
   }
 }
+
+@entry-width: @main-width - @section-padding;
+@time-width: 100px;
+.timed-block .entry {
+  width: @entry-width;
+
+  .time {
+    width: @time-width;
+    .thin-font;
+    float:left;
+  }
+
+  .entry-main {
+    .header {
+      margin: 0;
+      line-height: @font-size;
+    }
+    margin-left: @time-width + (@section-padding/2);
+  }
+}
+
