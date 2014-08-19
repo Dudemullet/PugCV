@@ -48,7 +48,6 @@ header {
   margin: auto auto;
   padding: (@section-padding/2);
   padding-top: @section-padding;
-  box-sizing: content-box;
 }
 
 .sidebar {
@@ -57,7 +56,7 @@ header {
 }
 
 .main {
-  max-width: @main-width;
+  max-width: @main-width - @section-padding;
   float: left;
   padding-left: @section-padding;
   box-sizing: border-box;

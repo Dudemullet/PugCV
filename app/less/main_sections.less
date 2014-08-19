@@ -5,11 +5,10 @@
   }
 }
 
-@entry-width: @main-width - @section-padding;
+
+@entry-width: @main-width;
 @time-width: 100px;
 .timed-block .entry {
-  width: @entry-width;
-
   .time {
     width: @time-width;
     .thin-font;
@@ -19,9 +18,8 @@
   .entry-main {
     .header {
       margin: 0;
-      line-height: @font-size;
     }
-    margin-left: @time-width + (@section-padding/2);
+    margin-left: @time-width;
   }
 }
 
