@@ -86,6 +86,9 @@ section ul {
   margin: 0 0 20px 0;
   padding: 0;
 }
+.timed-block .entry {
+  margin-bottom: 10px;
+}
 .timed-block .entry .time {
   width: 100px;
   font-weight: 200;
@@ -96,4 +99,14 @@ section ul {
 }
 .timed-block .entry .entry-main .header {
   margin: 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+.timed-block .entry .entry-main .subject {
+  float: right;
+  font-weight: normal;
+  line-height: 15px;
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 200;
 }
