@@ -1,0 +1,13 @@
+@media print {
+  a[data-print] {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+
+    &:after {
+      content: attr(data-print);
+      display: block;
+      font-weight: 100;
+    }
+  }
+}
