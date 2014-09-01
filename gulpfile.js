@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   path = require('path'),
   APP_ROOT = path.join(__dirname, 'app'),
-  less = require('gulp-less');
+  less = require('gulp-less'),
+  jade = require('gulp-jade');
 
 var paths = {
   lessFiles : APP_ROOT + '/less/**.less',
@@ -52,6 +53,12 @@ gulp.task('less', function() {
     .pipe(less())
     .on('error', console.log)
     .pipe(gulp.dest(APP_ROOT + "/css"));
+});
+
+gulp.task('build', function() {
+  return gulp.src(APP_ROOT + path.sep + "index.jade")
+    .pipe(jade())
+    .pipe(gulp.dest(APP_ROOT));
 });
 
 // `gulp.task()` defines task that can be run calling `gulp xyz` from the command line
