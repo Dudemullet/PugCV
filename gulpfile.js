@@ -64,3 +64,4 @@ gulp.task('build', function() {
 // `gulp.task()` defines task that can be run calling `gulp xyz` from the command line
 // The `default` task gets called when no task name is provided to Gulp
 gulp.task('default', ['copy','less','watch']);
+gulp.task('html', ['build']);
