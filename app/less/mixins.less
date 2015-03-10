@@ -1,3 +1,11 @@
+.transform(@value){
+  -webkit-transform: @value;
+  -moz-transform:    @value;
+  -ms-transform:     @value;
+  -o-transform:      @value;
+  transform:         @value;
+}
+
 .word-wrap() {
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -15,7 +23,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  .transform(translate(-50%, -50%));
 }
 
 .columns(@arg) {
