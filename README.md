@@ -1,3 +1,6 @@
+# JadeCV
+This projects lets you make your cv using Frigeris style
+
 # License
 Copyright (C) 2012, Adrien Friggeri
 
