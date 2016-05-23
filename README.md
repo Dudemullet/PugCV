@@ -1,5 +1,5 @@
 # PugCV
-This projects lets you make your cv using Pug instead of LaTeX.
+This projects lets you make your cv using Pug instead of LaTeX. [Example](http://nadafancy.com/cv/)
 
 ## Useage
 
