@@ -1,7 +1,19 @@
-# JadeCV
-This projects lets you make your cv using Frigeris style
+# PugCV
+This projects lets you make your cv using Pug instead of LaTeX.
 
-# License
+## Useage
+
+```
+gulp 
+```
+_starts a live-reload webserver_
+
+```
+gulp build
+```
+_creates a static html file from the pug templates_
+
+### License
 Copyright (C) 2012, Adrien Friggeri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
