@@ -2,23 +2,47 @@ include ../mixins/main_section
 include ../mixins/timed_section
 
 +section('summary')
-  .thin-font I'm a computer science major and have been doing full stack web development for over 4 years. Most of that time I've used HTML, CSS and Javascript. The frameworks or libraries I'm most familiar with are jQuery, D3, Bootstrap, Node, Express and Backbone. I enjoy working and contributing back to open source projects and going to tech related meetups.
+  .thin-font I'm a computer science major and have been doing full stack web development for over 8 years. The frameworks or libraries I'm most familiar with are jQuery, D3, Bootstrap, Node, Express and Backbone. I enjoy working and contributing back to open source projects and going to tech related meetups.
 
 +timed_section('experience')
   .entry
-    .time 2014
+    .time 2016-2017
+    .entry-main
+      h3.header
+        a(href="https://konfio.mx") Konfio, Mexico City
+        small.subject Software Architect
+      .thin-font 
+        ul
+        li Created a single click multi-stage build process with Jenkins
+        li Implemented the immutable server pattern using Docker and ECS
+        li Lead team to decrease page load time (under 1 sec.) using service workers
+        li Lead companies dev team to implement good practices: code reviews, merge requests, code style guides and unit tests.
+  .entry
+    .time 2015-2016
+    .entry-main
+      h3.header
+        a(href="https://konfio.mx") Konfio, Mexico City
+        small.subject Full stack developer
+      .thin-font 
+        ul
+        li In charge of Web development using Zend Framework 2
+        li Created a web scraper that has donwloaded over 3.5 million invoices
+        li Web scraper can pass through captcha
+        li Migrated from a monolithic structure to micro service oriented
+  .entry
+    .time 2014 - 2015
     .entry-main
       h3.header
         a(href="http://makersquare.com") MakerSquare, San Francisco
         small.subject Front end instructor
-      .thin-font Teaching front end technologies like HTML, CSS, Javascript and Node. Have helped develop curriculum to teach some of these technologies. I also interact on a day-to-day basis with all of the students and help them achieve there goals of becoming web developers in a span of 3 months.
+      .thin-font Taught front end technologies like HTML, CSS, Javascript and Node. Also, helped migrate the curriculum from Ruby to Js.
   .entry
     .time 2011-2014
     .entry-main
       h3.header
-        a(href="http://pros.com/") PRO, Houston
-        small.subject Front end developer
-      .thin-font Developed a mid market targeted web application from scratch. The project started as an internal 6 week long 'innovation cell' in November 2011, and is now a full fledged product. The team works with a startup mentality, so not only have I been helping with the front-end but also publishing builds, setting up our cloud platform with Azure and even interfacing with customers. I have also given 2 workshops on D3 for PROS staff.
+        a(href="http://pros.com/") PROS, Houston
+        small.subject Full stack developer
+      .thin-font Developed an SMB targeted web application using Grails. Also helped create the continous integration process in Microsoft Azure.
   .entry
     .time 2010-2011
     .entry-main
@@ -31,7 +55,7 @@ include ../mixins/timed_section
     .entry-main
       h3.header Synergy Elements, Mexico City
         small.subject Embedded software developer
-      .thin-font  Synergy Elements was a home automation company delivering solutions using the zigbee wireless standard. I was responsible for creating our OEM builds using Windows CE 5/6, drivers for said devices and the systems mp3/id3 tag reader using C and C#.
+      .thin-font I was responsible for creating our OEM builds using Windows CE 5/6, drivers for said devices and the systems mp3/id3 tag reader using C and C#.
 +timed_section('education')
   .entry
     .time 2003-2008
@@ -43,11 +67,10 @@ include ../mixins/timed_section
   .entry
     .time 06-12 2007
     .entry-main
-      h3.header2
+      h3.header
         a(href="http://www.cantera-tech.com/es/") Cantera tech, Barcelona
         small.subject Internship abroad as part of school program
-      .thin-font Cantera tech is a software development and consulting firm based in Barcelona. Part of my responsibilities were developing a Java web application from scratch as well as unix sysadmin duties for my team. To help develop this application various Java frameworks like Struts and Hibernate.
-
+      .thin-font Developed a Java web application using Struts 2 and Hibernate. Also worked as the teams unix sysadmin
 +timed_section('personal projects')
   .entry
     .time 2017
