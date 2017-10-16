@@ -4,7 +4,9 @@ aside.sidebar
   +section('about')
     ul
       li.item
-        a(href="mailto:luis@nothingfancy.co") luis@nothingfancy.co
+        a(href="mailto:luis@nothingfancy.co" data-print="Email") luis@nothingfancy.co
+      li.item
+        a(href="tel://+16198162470" data-print="Mobile") 619-816-2470
       li.item
         a(href="https://github.com/Dudemullet", data-print="github/Dudemullet") GitHub
       li.item
@@ -17,7 +19,9 @@ aside.sidebar
     .item Node
     .item HTML & CSS
     .item Java (Groovy)
-    .item MVC Frameworks
+    .item Grails
+    .item Zend Framework 2
+    .item Design Patterns
 
   +section('libraries')
     .item D3
@@ -28,3 +32,9 @@ aside.sidebar
     .item Express
     .item Grunt/Gulp
     .item Backbone
+
+  +section('aws')
+    .item ECS/ECR
+    .item SNS/SQS
+    .item Lambda
+    .item ELB
