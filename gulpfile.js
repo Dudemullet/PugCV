@@ -37,9 +37,8 @@ gulp.task('watch', function(){
   var lr = startLiveReload();
 
   gulp.watch(paths.lessFiles,['less']);
-  gulp.watch([paths.jadeFiles, paths.lessFiles], function(event){
-    notifyLivereload(event,lr);
-  }).on('error', console.log)
+  gulp.watch([paths.jadeFiles, paths.lessFiles], ['build'])
+    .on('error', console.log);
 })
 
 gulp.task('copy', function() {
