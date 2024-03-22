@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   path = require('path'),
-  APP_ROOT = path.join(__dirname, 'app'),
+  APP_ROOT = path.join(__dirname, '/app'),
   less = require('gulp-less'),
   jade = require('gulp-jade'),
   st = require('st'),
@@ -16,12 +16,11 @@ var paths = {
  *  Start the static file server
  * */
 gulp.task('server', (done) => {
-  http.createServer(
-    st({ 
-      path: APP_ROOT,
-      index: '/',
-      cache: false 
-    })).listen(8080, done);
+  const PORT = 8888;
+  console.log(`Running server at http://127.0.0.1:${PORT}`);
+  console.log(`Serving: ${APP_ROOT}`);
+  server = st({path:APP_ROOT, cache:false, index:"/index.html"});
+  return  http.createServer(server).listen(PORT, done);
 });
 
 /*
