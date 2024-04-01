@@ -1,2 +1,6 @@
-app/css/app.css
+# dependencies
 node_modules
+
+# artifacts
+app/css/app.css
+app/index.html
