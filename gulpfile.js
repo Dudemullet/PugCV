@@ -16,10 +16,11 @@ var paths = {
  *  Start the static file server
  * */
 gulp.task('server', (done) => {
-  const PORT = 8888;
-  console.log(`Running server at http://127.0.0.1:${PORT}`);
+  const PORT = 8899;
+  console.log(`Running server at http://127.0.0.1:${PORT}/index.html`);
   console.log(`Serving: ${APP_ROOT}`);
-  server = st({path:APP_ROOT, cache:false, index:"/index.html"});
+  server = st({path:APP_ROOT});
+  // server = st({path:APP_ROOT, cache:false, index:"/index.html"});
   return  http.createServer(server).listen(PORT, done);
 });
 
@@ -70,5 +71,5 @@ gulp.task('build', function() {
 
 // `gulp.task()` defines task that can be run calling `gulp xyz` from the command line
 // The `default` task gets called when no task name is provided to Gulp
-gulp.task('default', ['copy','less','watch']);
+gulp.task('default', ['copy','less', 'build','watch']);
 gulp.task('html', ['build']);
